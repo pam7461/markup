@@ -5,61 +5,126 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>list를 이용한 네비게이션</title>
+    <style>
+        *{
+            box-sizing:border-box;
+            margin:0;
+            padding:0;            
+        }
+        h1,h2,h3,h4,h5,h6,strong{
+            font-weight:400; 
+            font-size:16px;           
+        }
+        a{
+            color:#000;
+            text-decoration:none;
+        }
+        ol,ul,li{
+            list-style:none;
+        }
+
+        header{
+            width:960px;
+            margin:0 auto;
+            padding-top:20px;
+        }
+
+        h1{
+            margin-bottom:30px;
+            font-weight:700;
+            font-size:22px;
+            text-align:center;
+        }
+        h1>a{
+            color:red;
+        }
+
+        nav>ul>li>ul{
+            display:none;
+        }
+        nav>ul:hover>li>ul{
+            display:block;
+        }
+        nav>ul>li{
+            /* display:inline; */            
+            float:left;
+            width:150px;
+            margin-right:12px;
+            padding:10px 0 12px;
+            font-weight:700;
+            font-size:18px;
+            color:#333333;
+            text-align:center; 
+        }
+        nav>ul>li:hover{
+            color:#ffffff;
+            background-color:darkred;
+        }
+
+        nav>ul>li:last-child{
+            margin-right:0;
+        }
+    </style>
 </head>
 <body>
-    <h1>HOLLYS</h1>
-    <ul>
-        <li>
-            Menu
+    <header>
+        <h1><a href="./exe1-6.html">HOLLYS</a></h1>
+        <nav>
             <ul>
-                <li><a href="#">COFFEE</a></li>
-                <li><a href="#">라떼</a></li>
-                <li><a href="#">할리치노</a></li>
-                <li><a href="#">스파클링</a></li>
-                <li><a href="#">푸드</a></li>
-                <li><a href="#">MD상품</a></li>
-                <li><a href="#">MD식품</a></li>
+                <li>
+                    Menu
+                    <ul>
+                        <li><a href="#">COFFEE</a></li>
+                        <li><a href="#">라떼</a></li>
+                        <li><a href="#">할리치노</a></li>
+                        <li><a href="#">스파클링</a></li>
+                        <li><a href="#">푸드</a></li>
+                        <li><a href="#">MD상품</a></li>
+                        <li><a href="#">MD식품</a></li>
+                    </ul>
+                </li>        
+                <li>
+                    HOLLYS Mall
+                    <ul>
+                        <li><a href="#">할리스콘</a></li>
+                        <li><a href="#">할리스카드</a></li>
+                        <li><a href="#">E-Store</a></li>
+                        <li><a href="#">구매내역</a></li>                
+                    </ul>
+                </li>
+                <li>
+                    Membership
+                    <ul>
+                        <li><a href="#">스마트오더</a></li>
+                        <li><a href="#">멤버십 혜택</a></li>
+                    </ul>
+                </li>
+                <li>
+                    HOLLYS News
+                    <ul>
+                        <li><a href="#">Notice</a></li>
+                        <li><a href="#">Event</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Store
+                    <ul>
+                        <li><a href="#">매장검색</a></li>
+                    </ul>
+                </li>
+                <li>
+                    HOLLYS is
+                    <ul>
+                        <li><a href="#">HOLLYS</a></li>
+                        <li><a href="#">할리스 위치 및 연락처</a></li>
+                        <li><a href="#">채용 안내</a></li>
+                        <li><a href="#">가맹문의 및 절차</a></li>                
+                        <li><a href="#">B2B 사업 소개</a></li>                
+                    </ul>
+                </li>
             </ul>
-        </li>        
-        <li>
-            HOLLYS Mall
-            <ul>
-                <li><a href="#">할리스콘</a></li>
-                <li><a href="#">할리스카드</a></li>
-                <li><a href="#">E-Store</a></li>
-                <li><a href="#">구매내역</a></li>                
-            </ul>
-        </li>
-        <li>
-            Membership
-            <ul>
-                <li><a href="#">스마트오더</a></li>
-                <li><a href="#">멤버십 혜택</a></li>
-            </ul>
-        </li>
-        <li>
-            HOLLYS News
-            <ul>
-                <li><a href="#">Notice</a></li>
-                <li><a href="#">Event</a></li>
-            </ul>
-        </li>
-        <li>
-            Store
-            <ul>
-                <li><a href="#">매장검색</a></li>
-            </ul>
-        </li>
-        <li>
-            HOLLYS is
-            <ul>
-                <li><a href="#">HOLLYS</a></li>
-                <li><a href="#">할리스 위치 및 연락처</a></li>
-                <li><a href="#">채용 안내</a></li>
-                <li><a href="#">가맹문의 및 절차</a></li>                
-                <li><a href="#">B2B 사업 소개</a></li>                
-            </ul>
-        </li>
-    </ul>
+        </nav>
+    </header>
+    
 </body>
 </html>
