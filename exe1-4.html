@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지</title>
+</head>
+<body>
+    <a href="#">
+        <img src="./images/logo.png" alt="대체택스트">
+    </a>
+    <img src="./images/whitestar.jpg" alt="대체택스트" usemap="#link-img">
+    <map name="link-img">
+        <area shape="rect" coords="0,0,100,90" href="https://www.naver.com" alt="네이버로 이동" target="_black">
+        <area shape="circle" coords="50,132,50" href="https://www.daum.net" alt="다음으로 이동" target="_blank">
+    </map>
+
+    <picture>
+        <!-- 데스크탑 -->
+        <source media="(min-width:1200px)" srcset="./images/sun.jpg">
+        <!-- 테블릿 이미지 -->
+        <source media="(min-width:800px)" srcset="./images/map.jpg">
+        <!-- 기본 이미지 -->
+        <img src="./images/logo.png" alt="태양">
+    </picture>
+    
+    
+    
+
+
+</body>
+</html>
