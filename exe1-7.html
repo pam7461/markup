@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블(table)</title>
+    <style>
+       *{
+        box-sizing:border-box;
+        margin:0;
+        padding:0;
+       }
+       table{
+        width:300px;
+        margin:20px auto;
+        border-collapse:collapse;
+       }
+       tr{
+       }
+       tr>*{
+        border:1px solid black;
+       }
+    </style>
+</head>
+<body>
+    <h1>Table</h1>
+    <table>        
+        <tr>
+            <th style="width:20%">성명</th>
+            <th style="width:15%">성별</th>
+            <th>주소</th>
+        </tr>
+        <caption>표1 - 고전속의 주인공 인적사항</caption>
+        <tr>
+            <td>홍길동</td>
+            <td>남</td>
+            <td>서울</td>
+        </tr>
+        <tr>
+            <td>이몽룡</td>
+            <td>남</td>
+            <td>서울,남원</td>
+        </tr>
+        <tr>
+            <td>성춘향</td>
+            <td>여</td>
+            <td>남원</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>성명</th>
+            <td>홍길동</td>
+            <td>이몽룡</td>
+            <td>성춘향</td>
+        </tr>
+        <tr>
+            <th>성별</th>
+            <td>남</td>
+            <td>남</td>
+            <td>여</td>
+        </tr>
+        <tr>
+            <th>주소</th>
+            <td>서울</td>
+            <td>서울,남원</td>
+            <td>남원</td>
+        </tr>
+        <caption>표2 - 한글소설의 주인공 인적사항</caption>
+    </table>
+
+    <table>
+        <tr>
+            <th colspan="2">name</th>
+            <th>age</th>
+            <th>address</th>
+        </tr>
+        <tr>
+            <td style="width:10%">조</td>
+            <td style="width:20%">환준</td>
+            <td style="width:20%">비밀</td>
+            <td>부천</td>
+        </tr>
+        <tr>
+            <td>홍</td>
+            <td>길동</td>
+            <td>18</td>
+            <td>서울</td>
+        </tr>
+        <tr>
+            <td>성</td>
+            <td>춘향</td>
+            <td>16</td>
+            <td>남원</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td rowspan="3">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>            
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td style="width:25%">11</td>
+            <td style="width:25%">12</td>
+            <td style="width:25%">13</td>
+            <td style="width:25%">14</td>
+        </tr>
+    </table>
+
+    <table>
+        <caption>행열합치기</caption>
+        <tr>
+            <td colspan="2" style="width:50%;">1</td>
+            <td style="width:25%;">2</td>
+            <td style="width:25%;">3</td>
+        </tr>
+        <tr>
+            <td style="width:20%;">4</td>
+            <td style="width:30%;">5</td>
+            <td colspan="2" rowspan="2">6</td>
+        </tr>
+        <tr>
+            <td rowspan="2">7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+        </tr>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>헤더1</th>
+                <th>헤더2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>자료1</td>
+                <td>자료2</td>
+            </tr>
+            <tr>
+                <td>자료3</td>
+                <td>자료4</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>주소</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
