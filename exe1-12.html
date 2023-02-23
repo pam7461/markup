@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오디오/비디오</title>
+    <style>
+        *{
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <picture>
+        <source media="(min-width:1200px)" srcset="./images/sun.jpg">
+        <source media="(min-width:768px)" srcset="./images/map.jpg">
+        <img src="./images/logo.png" alt="로고">
+    </picture> -->
+    <audio controls loop>
+        <!-- 소 -->
+        <source src="./media/applause.ogg">
+        <!-- 중 -->
+        <source src="./media/applause.mp3">
+        <!-- 대 -->
+        <source src="./media/applause.wav">
+    </audio>
+    <video muted autoplay loop width="300">
+        <source src="./media/sunrise.ogg">
+        <source src="./media/sunrise.webm">
+        <source src="./media/sunrise.mp4">
+    </video>
+
+</body>
+</html>
